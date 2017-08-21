@@ -65,7 +65,9 @@ gulp.task("minifyScripts", ["concatScripts"], function(){
 
 gulp.task('watchFiles', function(){
   gulp.watch('css/*.css', ['process-css']);
-  gulp.watch('js/*.js', ['minifyScripts']);
+  gulp.watch('js/*.js', ['concatScripts']);
 })
+
+gulp.task('serve', ['watchFiles']);
 
 gulp.task('default',['process-css','minifyScripts']);
