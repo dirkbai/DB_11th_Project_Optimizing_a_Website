@@ -52,6 +52,7 @@ gulp.task("concatScripts", function(){
             'js/foundation.js',
             'js/foundation.equalizer.js',
             'js/foundation.reveal.js',
+            'js/lazyload.min',
             'js/scripts.js'])
       .pipe(concat("app.js"))
       .pipe(gulp.dest("./dist"));
