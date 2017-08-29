@@ -64,17 +64,13 @@ body {
     color: #fff;
 }
 .menu .logo {
-    background-size: contain;
-    font-family: "Arvo", serif;
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 1;
-    margin: 0 0 1rem 0;
-    color: rgb(72, 84, 97);
-    text-indent: -9999999rem;
-    overflow: hidden;
-    width: 40rem;
-    height: 3rem;
+  font: bold 3rem "Arvo", serif;
+  line-height: 1;
+  margin: 0 0 1rem 0;
+  color: rgb(72, 84, 97);
+  overflow: hidden;
+  width: 40rem;
+  height: 3rem;
 }
 .menu .logo b {
     color: rgb(47, 171, 206);
