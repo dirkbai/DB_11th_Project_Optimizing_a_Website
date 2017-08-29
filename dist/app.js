@@ -1402,6 +1402,7 @@ console.log('scrpts!!!!+++');
 
 var lazyModals = document.getElementsByClassName('mod');
 var lazyPhotos = document.getElementsByClassName('photos4loading');
+var photosXL = document.getElementsByClassName('click4XL');
 // var photo4 = document.getElementById('photo4');
 // var photo5 = document.getElementById('photo5');
 // var photo6 = document.getElementById('photo6');
@@ -1409,11 +1410,16 @@ var lazyPhotos = document.getElementsByClassName('photos4loading');
 // var photo8 = document.getElementById('photo8');
 // var photo9 = document.getElementById('photo9');
 
+// photosXL.addEventListener('click', function{
+//   // console.log('it worked');
+// });
 
-function lazyModal_1() {
-      lazyModals[0].classList.add('loaded');
-      lazyModals[0].setAttribute('src', 'img/XL/photo1.jpg');
-      lazyModals[0].setAttribute('data-was-processed', "true");
+function lazyModal_1(e) {
+      var numberString = $(this).attr("data-message");
+      var numberXL = parseInt(numberString);
+      lazyModals[numberXL].classList.add('loaded');
+      lazyModals[numberXL].setAttribute('src', 'img/XL/photo' + numberXL + '.jpg');
+      lazyModals[numberXL].setAttribute('data-was-processed', "true");
     }
 
 function lazyModal_2() {
