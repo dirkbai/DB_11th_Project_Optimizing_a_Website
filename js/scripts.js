@@ -72,3 +72,11 @@ document.addEventListener('scroll', function() {
   photo8.setAttribute('src', 'img/photo8.jpg');
   photo9.setAttribute('src', 'img/photo9.jpg');
 });
+
+//   photo5.addEventListener('scroll', function() {
+//   this.setAttribute('src', 'img/photo5.jpg');
+// });
+//
+// photo6.addEventListener('scroll', function() {
+// this.setAttribute('src', 'img/photo6.jpg');
+// });

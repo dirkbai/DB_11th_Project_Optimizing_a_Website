@@ -1464,11 +1464,19 @@ function lazyModal_9() {
     }
 
 
-document.addEventListener('scroll', function() {
-  photo4.setAttribute('src', 'img/photo4.jpg');
-  photo5.setAttribute('src', 'img/photo5.jpg');
-  photo6.setAttribute('src', 'img/photo6.jpg');
-  photo7.setAttribute('src', 'img/photo7.jpg');
-  photo8.setAttribute('src', 'img/photo8.jpg');
-  photo9.setAttribute('src', 'img/photo9.jpg');
+// document.addEventListener('scroll', function() {
+//   photo4.setAttribute('src', 'img/photo4.jpg');
+//   photo5.setAttribute('src', 'img/photo5.jpg');
+//   photo6.setAttribute('src', 'img/photo6.jpg');
+//   photo7.setAttribute('src', 'img/photo7.jpg');
+//   photo8.setAttribute('src', 'img/photo8.jpg');
+//   photo9.setAttribute('src', 'img/photo9.jpg');
+// });
+
+  photo5.addEventListener('scroll', function() {
+  this.setAttribute('src', 'img/photo5.jpg');
+});
+
+  photo6.addEventListener('scroll', function() {
+this.setAttribute('src', 'img/photo6.jpg');
 });
