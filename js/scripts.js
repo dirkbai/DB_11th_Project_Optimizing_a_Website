@@ -1,12 +1,13 @@
 console.log('scrpts!!!!+++');
 
 var lazyModals = document.getElementsByClassName('mod');
-var photo4 = document.getElementById('photo4');
-var photo5 = document.getElementById('photo5');
-var photo6 = document.getElementById('photo6');
-var photo7 = document.getElementById('photo7');
-var photo8 = document.getElementById('photo8');
-var photo9 = document.getElementById('photo9');
+var lazyPhotos = document.getElementsByClassName('photos4loading');
+// var photo4 = document.getElementById('photo4');
+// var photo5 = document.getElementById('photo5');
+// var photo6 = document.getElementById('photo6');
+// var photo7 = document.getElementById('photo7');
+// var photo8 = document.getElementById('photo8');
+// var photo9 = document.getElementById('photo9');
 
 
 function lazyModal_1() {
@@ -65,12 +66,17 @@ function lazyModal_9() {
 
 
 document.addEventListener('scroll', function() {
-  photo4.setAttribute('src', 'img/photo4.jpg');
-  photo5.setAttribute('src', 'img/photo5.jpg');
-  photo6.setAttribute('src', 'img/photo6.jpg');
-  photo7.setAttribute('src', 'img/photo7.jpg');
-  photo8.setAttribute('src', 'img/photo8.jpg');
-  photo9.setAttribute('src', 'img/photo9.jpg');
+  for (var i = 0; i < lazyPhotos.length; i++) {
+    var currentPhoto = lazyPhotos[i];
+    var currentId = currentPhoto.getAttribute("id");
+    currentPhoto.setAttribute('src', 'img/'+ currentId +'.jpg');
+  }
+  // photo4.setAttribute('src', 'img/photo4.jpg');
+  // photo5.setAttribute('src', 'img/photo5.jpg');
+  // photo6.setAttribute('src', 'img/photo6.jpg');
+  // photo7.setAttribute('src', 'img/photo7.jpg');
+  // photo8.setAttribute('src', 'img/photo8.jpg');
+  // photo9.setAttribute('src', 'img/photo9.jpg');
 });
 
 //   photo5.addEventListener('scroll', function() {
