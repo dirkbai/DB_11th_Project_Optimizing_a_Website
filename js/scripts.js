@@ -1,4 +1,4 @@
-console.log('scrpts!!!!+++');
+
 
 var lazyModals = document.getElementsByClassName('mod');
 var lazyPhotos = document.getElementsByClassName('photos4loading');
@@ -19,8 +19,9 @@ for (var i = 0; i < photosXL.length; i++) {
   photosXL[i].index = i;
   photosXL[i].addEventListener("click", function(e){
      for (var i = 0; i < photosXL.length; i++) {
+       var number4XLphoto = i+1;
        lazyModals[i].classList.add('loaded');
-       lazyModals[i].setAttribute('src', 'img/XL/photo' + i + '.jpg');
+       lazyModals[i].setAttribute('src', 'img/XL/photo' + number4XLphoto + '.jpg');
        lazyModals[i].setAttribute('data-was-processed', "true");
      }
   });
