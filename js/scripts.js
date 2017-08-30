@@ -23,6 +23,13 @@ document.addEventListener('scroll', function() {
     var currentPhoto = lazyPhotos[i];
     var currentId = currentPhoto.getAttribute("id");
     currentPhoto.setAttribute('src', 'img/'+ currentId +'.jpg');
-    currentPhoto.setAttribute('data-was-processed', "true");
   }
 });
+
+//   photo5.addEventListener('scroll', function() {
+//   this.setAttribute('src', 'img/photo5.jpg');
+// });
+//
+// photo6.addEventListener('scroll', function() {
+// this.setAttribute('src', 'img/photo6.jpg');
+// });
