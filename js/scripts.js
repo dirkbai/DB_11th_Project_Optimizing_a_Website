@@ -90,6 +90,7 @@ document.addEventListener('scroll', function() {
     var currentPhoto = lazyPhotos[i];
     var currentId = currentPhoto.getAttribute("id");
     currentPhoto.setAttribute('src', 'img/'+ currentId +'.jpg');
+    currentPhoto.setAttribute('data-was-processed', "true");
   }
   // photo4.setAttribute('src', 'img/photo4.jpg');
   // photo5.setAttribute('src', 'img/photo5.jpg');

@@ -18,11 +18,18 @@
 
 .image-grid .image a {
     border-radius: .5rem .5rem 0 0;
-    /* max-height: 15rem; */
-    /* min-height: 15rem; */
+    /*min-height: 30vh; */
     display: block;
     min-width: 100%;
     overflow: hidden;
+}
+
+.image-grid .image a  img{
+    min-height: 30vh;
+}
+
+#photo7, #photo8, #photo9 {
+    min-height: 40vh;
 }
 .image-grid .image .info {
     background-color: #fff;
