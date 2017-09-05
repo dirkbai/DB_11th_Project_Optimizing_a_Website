@@ -25,11 +25,3 @@ document.addEventListener('scroll', function() {
     currentPhoto.setAttribute('src', 'img/'+ currentId +'.jpg');
   }
 });
-
-//   photo5.addEventListener('scroll', function() {
-//   this.setAttribute('src', 'img/photo5.jpg');
-// });
-//
-// photo6.addEventListener('scroll', function() {
-// this.setAttribute('src', 'img/photo6.jpg');
-// });
